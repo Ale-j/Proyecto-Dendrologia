@@ -1,0 +1,1028 @@
+---
+title: "Guia casera Parcial 1 de Dendrologia"
+author: "Alejandro Jaramillo Arango"
+date: "26/10/2019"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: journal
+    highlight: haddock
+    df_print: paged
+    code_folding: hide
+---
+<style>
+body {
+text-align: justify}
+</style>
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, results='hide', echo=FALSE}
+
+library("ggplot2")
+library("dplyr")
+
+```
+```{r, results='hide', echo=FALSE}
+Dendron <- read.csv("Dendron1.csv", encoding = "UTF-8")
+
+
+```
+
+# Introducción 
+
+Este docuemtno fue hecho como una guia casera para estudiar para el primer parcial de dendrología del 2019-02. En este parcial se encuentra la base de datos "dendron1.csv" La cual ya les he pasado previamente, allí he recopilado toda la información que tengo escrita en mis notas de dendrología, por lo que es muy probable que carezca de información que quizá usted, como lector, considere vital. Sin embargo este documento es colaborativo, usted puede darme comentarios sobre qué le falta, qué le sobra, qué no es correcto y pasármelo. Así podremos perfeccionar poco a poco la información. También puede hacer la correción directamente en la base de datos "dendron1.csv" y rehacer partes del documento o hacerlo en su totalidad. 
+
+# ¿cómo leer el documento?
+
+Desde mi punto de vista, además de tomar una imagen general de como luce el árbol, la identificación de qué familias tienen estípulas y cuales no es vital y debería ser el primer paso para la identificación  en sí. Por la misma razón este documento está dividido por las familias con estípulas y las familias que no. A partir de ahí están caracteres como: tipo de hoja, posición, disposición, exudado, glándula y otros caracteres vitales incluso para llegar al género de una familia determinada. 
+
+Las variables de la base de datos tendrán muchas veces la entrada **"Varia o No Registra"**, lo cual supone es una entrada que debe revisarse, que no está especificada por las notas que tomé, o que en efecto no existe. Un ejemplo de este puede encontrarse en la columna `subfamilia`, la cual para *Fabaceae* tendrá registro, pero no para *Melastomataceae*.
+
+Un caso particular es la variable `genero`, la cual siempre tendrá una primera entrada llamada **General**. Esto se referirá a que las caracteristicas de las siguientes variables como el tipo de hoja son globales y no expresan la característica de un género en particular.
+
+Una vez más, pido encarecidamente que analicen qué es correcto y qué no en el documento, este es un recurso para todos, no es de unos pocos, ergo, una correción puede ayudar a toda la clase.
+
+# ¿qué tiene la base de datos?
+
+```{r}
+str(Dendron)
+```
+
+
+
+
+# Familias con Estípula {.tabset .tabset-pills}
+
+
+
+```{r}
+
+(arboles_estipula <- Dendron %>% 
+  filter(Dendron$estipula == "Si"| Dendron$estipula == "Si y No"))
+
+```
+
+
+## Fabaceae
+
+
+
+```{r}
+ arboles_estipula %>% 
+  filter(familia == "fabaceae")
+```
+
+## Lythraceae
+
+
+```{r}
+ arboles_estipula %>% 
+  filter(familia == "Lythraceae")
+```
+
+
+## Vochysiaceae
+
+
+```{r}
+ arboles_estipula %>% 
+  filter(familia == "vochysiaceae")
+```
+
+## Achariaceae
+
+
+```{r}
+ arboles_estipula %>% 
+  filter(familia == "Achariaceae")
+```
+
+## Chrysobalanaceae
+
+
+```{r}
+ arboles_estipula %>% 
+  filter(familia == "Chrysobalanaceae")
+
+```
+
+## Euphorbiaceae
+
+
+```{r}
+ arboles_estipula %>% 
+  filter(familia == "Euphorbiaceae")
+```
+
+## Caryocariaceae
+
+```{r}
+ arboles_estipula %>% 
+  filter(familia == "Caryocariaceae")
+```
+
+## Ochnaceae
+
+
+```{r}
+
+ arboles_estipula %>% 
+  filter(familia == "Ochnaceae")
+
+```
+
+## Peraceae
+
+
+```{r}
+ arboles_estipula %>% 
+  filter(familia == "Peraceae")
+```
+
+## Phyllantaceae
+
+
+```{r}
+ arboles_estipula %>% 
+  filter(familia == "Phyllanthaceae")
+```
+
+## Rhizophoraceae
+
+
+```{r}
+
+ arboles_estipula %>% 
+  filter(familia == "Rhizophoraceae")
+```
+
+
+
+## Salicaceae
+
+
+
+```{r}
+arboles_estipula %>% 
+  filter(familia == "Salicaceae")
+```
+
+
+## Violaceae
+
+
+```{r}
+
+ arboles_estipula %>% 
+  filter(familia == "Violaceae")
+
+```
+
+
+## Rubiaceae
+
+
+```{r}
+ arboles_estipula %>% 
+  filter(familia == "Rubiaceae")
+
+```
+
+## Magnoliaceae
+
+
+
+```{r}
+ arboles_estipula %>% 
+  filter(familia == "Magnoliaceae")
+```
+
+
+# Familias con Estípula y Hojas Compuestas {.tabset .tabset-pills}
+
+
+```{r}
+ (estipulo_comp <- arboles_estipula %>%
+   filter(grepl("ompuesta", tipo_de_hoja)))
+```
+
+
+
+
+## Fabaceae
+
+
+
+```{r}
+ estipulo_comp %>% 
+   filter(grepl("fabaceae", familia))
+
+```
+
+## Euphorbiaceae
+
+
+
+
+```{r}
+ estipulo_comp %>% 
+   filter(grepl("Euphorbiaceae", familia))
+```
+
+## Caryocariaceae
+
+
+
+```{r}
+estipulo_comp %>% 
+   filter(grepl("Caryocariaceae", familia))
+```
+
+# Familias Con Estípula, Hoja Compuesta y Exudado {.tabset .tabset-pills}
+
+```{r}
+
+(estipula_comp_exud <- arboles_estipula %>% 
+  filter(exudado == "Si" , grepl("ompuesta", tipo_de_hoja)))
+
+```
+
+## Fabaceae 
+
+```{r}
+ estipula_comp_exud %>% 
+   filter(familia == "fabaceae")
+
+```
+
+## Euphorbiaceae
+
+```{r}
+ estipula_comp_exud %>% 
+  filter(familia == "Euphorbiaceae")
+
+```
+
+
+
+
+
+
+
+# Familias con Estipulas y Hojas Simples {.tabset .tabset-pills}
+
+```{r}
+(estipulo_simpl <- arboles_estipula %>% 
+   filter(grepl("Simple", tipo_de_hoja)))
+```
+
+## Fabaceae
+
+```{r}
+ estipulo_simpl %>% 
+   filter(grepl("fabaceae", familia))
+```
+
+## Lythraceae
+
+```{r}
+estipulo_simpl %>% 
+  filter(grepl("Lythraceae", familia))
+```
+
+
+## Vochysiaceae
+
+```{r}
+estipulo_simpl %>% 
+  filter(grepl("vochysiaceae", familia))
+```
+
+## Achariaceae
+
+```{r}
+estipulo_simpl %>% 
+  filter(grepl("Achariaceae", familia))
+
+```
+
+## Chrysobalanaceae
+
+```{r}
+
+estipulo_simpl %>% 
+  filter(grepl("Chryso", familia))
+```
+
+## Ochnaceae
+
+
+```{r}
+estipulo_simpl %>% 
+  filter(grepl("chna", familia))
+```
+
+## Peraceae
+
+```{r}
+estipulo_simpl %>% 
+  filter(grepl("Pera", familia))
+```
+
+## Phyllantaceae
+
+```{r}
+estipulo_simpl %>% 
+  filter(grepl("Phylla", familia))
+```
+
+
+## Rhizophoraceae
+
+```{r}
+estipulo_simpl %>% 
+  filter(grepl("hizoph", familia))
+```
+
+## Salicaceae
+
+
+```{r}
+estipulo_simpl %>% 
+  filter(grepl("vochysiaceae", familia))
+```
+
+
+## Violaceae
+
+```{r}
+estipulo_simpl %>% 
+  filter(grepl("iolacea", familia))
+```
+
+
+## Rubiaceae
+
+```{r}
+estipulo_simpl %>% 
+  filter(grepl("Rubia", familia))
+```
+
+
+## Magnoliaceae
+
+```{r}
+estipulo_simpl %>% 
+  filter(grepl("agnoli", familia))
+```
+
+
+
+
+
+
+
+```{r}
+
+levels(arboles_estipula$posicion)[levels(arboles_estipula$posicion) == "Alternas "] <- "Alternas"
+levels(arboles_estipula$posicion)[levels(arboles_estipula$posicion) == "Alterna"] <- "Alternas"
+levels(arboles_estipula$posicion)
+levels(arboles_estipula$tipo_de_hoja)
+```
+
+
+
+# Familias con Estipula, Hojas simples, Alternas y Espiraladas {.tabset .tabset-pills}
+
+
+```{r}
+(esti_simp_alt_espir <- estipulo_simpl %>% 
+  filter(grepl("Simple", tipo_de_hoja), 
+         grepl("Alternas", posicion), 
+         grepl("Espiraladas", Disposicion)))
+
+```
+
+
+
+## Achariaceae
+
+```{r}
+esti_simp_alt_espir %>% 
+  filter(grepl("charia", familia))
+```
+
+## Chrysobalanaceae
+
+```{r}
+esti_simp_alt_espir %>% 
+  filter(grepl("Chryso", familia))
+```
+
+
+## Ochnacee
+
+```{r}
+
+esti_simp_alt_espir %>% 
+  filter(grepl("chnac", familia))
+```
+
+
+## Peraceae
+
+```{r}
+esti_simp_alt_espir %>% 
+  filter(grepl("Pera", familia))
+```
+
+## Magnoliaceae
+
+```{r}
+esti_simp_alt_espir %>% 
+  filter(grepl("agnoli", familia))
+```
+
+
+# Familias con Estípula, Hojas Simples, Alternas y Disticas 
+
+```{r}
+(esti_simp_alt_dis <- estipulo_simpl %>% 
+  filter(grepl("Simple", tipo_de_hoja), 
+         grepl("Alternas", posicion), 
+         grepl("Disticas", Disposicion)))
+
+```
+
+# Familias con Estípula, hojas Simples, Alternas y variada disposición {.tabset .tabset-pills}
+
+## Euphorbiaceae
+
+```{r}
+(esti_simp_alt_var <- estipulo_simpl %>% 
+  filter(grepl("Simples", tipo_de_hoja), 
+         grepl("Alternas", posicion), 
+         grepl("Varia", Disposicion)))
+```
+
+
+## Salicacia y violaceae
+
+```{r}
+(esti_simp_alt_var2 <- estipulo_simpl %>% 
+  filter(grepl("Simples", tipo_de_hoja), 
+         grepl("Alternas", posicion), 
+         grepl("Distica o Espiralada", Disposicion)))
+
+```
+
+
+
+# Familias con Estípula, hojas Simples, Alternas y Exudado {.tabset .tabset-pills}
+
+```{r}
+(esti_simpl_alt_exud <- estipulo_simpl %>% 
+   filter(grepl("Simple", tipo_de_hoja),
+          grepl("Alternas", posicion),
+          grepl("Si", exudado)))
+
+```
+
+## Chrysobalanaceae
+
+```{r}
+esti_simpl_alt_exud %>% 
+  filter(grepl("Chryso", familia))
+```
+
+
+## Euphorbiaceae
+
+```{r}
+esti_simpl_alt_exud %>% 
+  filter(grepl("Euphorb", familia))
+```
+
+
+#  Familias con Estípula, hojas Simples, Alternas y Glándulas {.tabset .tabset-pills}
+
+```{r}
+(esti_simpl_alt_gland <- estipulo_simpl %>% 
+   filter(grepl("Simple", tipo_de_hoja),
+          grepl("Alternas", posicion),
+          grepl("Si", Glandula)))
+
+```
+
+## Chrysobalanaceae
+
+```{r}
+esti_simpl_alt_gland %>% 
+  filter(grepl("Chryso", familia))
+```
+
+## Euphorbiaceae
+
+```{r}
+esti_simpl_alt_gland %>% 
+  filter(grepl("Eupho", familia))
+```
+
+## Salicaceae
+
+```{r}
+esti_simpl_alt_gland %>% 
+  filter(grepl("Salic", familia))
+```
+
+
+
+
+
+
+# Familias con Estipula, hojas Simples, Opuestas {.tabset .tabset-pills}
+
+```{r}
+(esti_simpl_opu <- estipulo_simpl %>% 
+  filter(grepl("Opuesta", posicion)))
+```
+
+
+## Lythraceae
+
+```{r}
+esti_simpl_opu %>% 
+  filter(grepl("ythr", familia))
+```
+
+## Vochysiaceae
+
+```{r}
+esti_simpl_opu %>% 
+  filter(grepl("ochy", familia))
+```
+
+
+## Ochnaceae
+
+```{r}
+esti_simpl_opu %>% 
+  filter(grepl("chna", familia))
+```
+
+
+## Rizhophoraceae
+
+```{r}
+esti_simpl_opu %>% 
+  filter(grepl("hizoph", familia))
+```
+
+
+## Rubiaceae
+
+```{r}
+esti_simpl_opu %>% 
+  filter(grepl("Rubia", familia))
+```
+
+# Familias con Estipula, hojas Simples, Opuestas y Exudado 
+
+```{r}
+esti_simpl_opu %>% 
+  filter(grepl("Si", exudado))
+
+```
+
+
+
+
+
+
+
+
+
+# Familias con Estipula, hojas Simples, Opuestas y Glándulas {.tabset .tabset-pills}
+
+
+
+```{r}
+esti_simpl_opu %>% 
+  filter(grepl("Si", Glandula))
+```
+
+
+
+
+
+
+
+# Familias sin Estípula {.tabset .tabset-pills}
+
+
+```{r}
+(arboles_sin_estipula <- Dendron %>% 
+  filter(estipula == "No"))
+```
+
+
+## Combretaceae
+```{r}
+arboles_sin_estipula %>% 
+  filter(grepl("Combre", familia))
+```
+
+
+## Melastomataceae
+
+```{r}
+arboles_sin_estipula %>% 
+  filter(grepl("elasto", familia))
+```
+
+
+## Myrtaceae
+
+```{r}
+arboles_sin_estipula %>% 
+  filter(grepl("yrt", familia))
+```
+
+
+## Calophylaceae
+
+```{r}
+arboles_sin_estipula %>% 
+  filter(grepl("Calophy", familia))
+```
+
+## Clusiaceae
+
+```{r}
+arboles_sin_estipula %>% 
+  filter(grepl("Clusi", familia))
+```
+
+
+## Humiricaceae
+
+```{r}
+arboles_sin_estipula %>% 
+  filter(grepl("Humi", familia))
+```
+
+
+## Hypericaceae
+
+```{r}
+arboles_sin_estipula %>% 
+  filter(grepl("peric", familia))
+```
+
+
+## Putranjivaceae
+
+```{r}
+arboles_sin_estipula %>% 
+  filter(grepl("Putra", familia))
+```
+
+
+## Apocynaceae
+
+```{r}
+arboles_sin_estipula %>% 
+  filter(grepl("Apocy", familia))
+```
+
+
+## Hernandiaceae
+
+```{r}
+arboles_sin_estipula %>% 
+  filter(grepl("Hernan", familia))
+```
+
+
+## Lauraceae
+
+```{r}
+arboles_sin_estipula %>% 
+  filter(grepl("Laura", familia))
+```
+
+
+## Siparunaceae
+
+```{r}
+arboles_sin_estipula %>% 
+  filter(grepl("Sipa", familia))
+```
+
+
+## Monimaceae
+
+```{r}
+arboles_sin_estipula %>% 
+  filter(grepl("Moni", familia))
+```
+
+
+## Annoniaceae
+
+```{r}
+arboles_sin_estipula %>% 
+  filter(grepl("Annon", familia))
+```
+
+
+
+# Familias sin Estipula y Hojas Compuestas
+
+```{r}
+(no_estip_comp <- arboles_sin_estipula %>% 
+  filter(grepl("ompuest", tipo_de_hoja)))
+```
+
+
+## ¡Ojo! para este parcial no hay familias de hoja compuesta sin estípulas
+
+# Familias sin Estipula, Hojas Simples y Alternas {.tabset .tabset-pills}
+
+```{r}
+(no_est_simp_alt <- arboles_sin_estipula %>% 
+  filter(posicion == "Alternas"))
+```
+
+```{r, echo= FALSE, results='hide'}
+levels(Dendron$posicion)[levels(Dendron$posicion) == "Alternas "] <- "Alternas"
+levels(Dendron$posicion)[levels(Dendron$posicion) == "Alterna"] <- "Alternas"
+levels(Dendron$posicion)
+```
+
+```{r, echo= FALSE, results='hide'}
+levels(arboles_estipula$posicion)
+write.csv(Dendron, "dendron1.csv")
+```
+
+
+## Combretaceae
+
+
+```{r}
+no_est_simp_alt %>% 
+  filter(grepl("Combre", familia))
+
+```
+
+
+## Humiricaceae
+
+
+
+```{r}
+no_est_simp_alt %>% 
+  filter(grepl("umiri", familia))
+```
+
+
+
+## Putranjivaceae
+
+
+```{r}
+
+no_est_simp_alt %>% 
+  filter(grepl("utranji", familia))
+
+```
+
+
+## Hernandiaceae
+
+
+```{r}
+no_est_simp_alt %>% 
+  filter(grepl("Hernan", familia))
+```
+
+
+## Anonniaceae
+
+```{r}
+no_est_simp_alt %>% 
+  filter(grepl("Annon", familia))
+
+```
+
+
+# Familias sin Estipula, hojas simples, Alternas y con Exudado
+
+```{r}
+(no_est_simp_alt_exu <- no_est_simp_alt %>% 
+   filter(grepl("Si", exudado)))
+```
+
+## ¡Ojo! Para este parcial no tenemos familias de hojas simples, alternas y con exudado
+
+# Familias sin Estipula, hojas simples, alternas y con Glandula
+
+```{r}
+(no_est_simp_alt_glan <- no_est_simp_alt %>% 
+   filter(grepl("Si", Glandula)))
+```
+
+## Solo una familia con dos géneros presenta estas Características: {.tabset .tabset-pills}
+
+### Buchenavia
+
+
+### Conocarpus
+
+
+
+
+# Familias sin Estipula, Hojas simples y Opuestas {.tabset .tabset-pills}
+
+```{r}
+(no_estip_simp_opu <- arboles_sin_estipula %>% 
+  filter(grepl("Simple", tipo_de_hoja),
+         posicion == "Opuestas"))
+```
+
+
+## Combretaceae
+
+```{r}
+no_estip_simp_opu %>% 
+  filter(grepl("ombre", familia))
+```
+
+
+## Melastomataceae
+
+```{r}
+no_estip_simp_opu %>% 
+  filter(grepl("Mela", familia))
+
+```
+
+## Calophylaceae
+
+```{r}
+no_estip_simp_opu %>% 
+  filter(grepl("alophy", familia))
+```
+
+
+## Clusiaceae
+
+
+```{r}
+no_estip_simp_opu %>% 
+  filter(grepl("lusia", familia))
+```
+
+## Apocynaceae
+
+```{r}
+no_estip_simp_opu %>% 
+  filter(grepl("pocyna", familia))
+```
+
+
+## Siparunaceae
+
+```{r}
+no_estip_simp_opu %>% 
+  filter(grepl("paruna", familia))
+```
+
+
+## Monimaceae
+
+
+
+```{r}
+no_estip_simp_opu %>% 
+  filter(grepl("onimac", familia))
+```
+
+
+
+
+# Familias sin Estipula, simples y de variada Posición {.tabset .tabset-pills}
+
+
+```{r}
+(no_estip_simp_var <- arboles_sin_estipula %>% 
+   filter(grepl("Opuestas o Verticiladas", posicion) |
+          grepl("Alternas u Opuestas", posicion)))
+
+
+```
+
+
+
+## Combretaceae
+
+```{r}
+no_estip_simp_var %>% 
+  filter(grepl("ombre", familia))
+```
+
+
+## Myrtaceae
+
+```{r}
+no_estip_simp_var %>% 
+  filter(grepl("yrta", familia))
+```
+
+## Hypericaceae
+
+```{r}
+no_estip_simp_var %>% 
+  filter(grepl("perica", familia))
+```
+
+
+## Lauraceae
+
+```{r}
+no_estip_simp_var %>% 
+  filter(grepl("aura", familia))
+```
+
+
+# Familias sin Estipula, Hojas Simples, Opuestas y Exudado {.tabset .tabset-pills}
+
+
+
+
+```{r}
+(no_estip_simp_opu_exu <- no_estip_simp_opu %>% 
+  filter(grepl("Si", exudado)))
+```
+
+
+
+## Calophylaceae
+
+```{r}
+no_estip_simp_opu_exu %>% 
+  filter(grepl("Calop", familia))
+```
+
+
+## Clusiaceae
+
+```{r}
+no_estip_simp_opu_exu %>% 
+  filter(grepl("lusia", familia))
+```
+
+
+## Apocynaceae
+
+```{r}
+no_estip_simp_opu_exu %>% 
+  filter(grepl("Apo", familia))
+```
+
+
+
+
+# Familias sin estipula, Hojas Simples, opuestas, con Glándulas {.tabset .tabset-pills}
+
+
+```{r}
+(no_estip_simp_opu_glan <- no_estip_simp_opu %>% 
+   filter(grepl("Si", Glandula)))
+```
+
+
+## Combretaceae
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

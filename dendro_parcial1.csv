@@ -1,0 +1,171 @@
+orden,familia,subfamilia,genero,especie,tipo_de_hoja,posicion,disposición,estipula,exudado,margen,Glandula,Presencia_olor,olor,otro,excepcion
+Fabales,fabaceae,mimosoideae,General,,Recomompuestas,Alternas,Distica o Espiral,Si,No,Entero,Si,Si,Guisante,,No
+Fabales,fabaceae,mimosoideae,Calliandra,,Compuesta,Alternas,Distica o Espiral,Si,No,Entero,No,Si,Guisante,,Si
+Fabales,fabaceae,mimosoideae,Parkia,,Recompuestas,Alternas,Distica o Espiral,Si,No,Entero,Si,Si,Guisante,,No
+Fabales,fabaceae,mimosoideae,Pithecelobium,,Biyugado compuesta,Alternas,Distica o Espiral,Si,No,Entero,Si,Si,Guisante,,Si
+Fabales,fabaceae,mimosoideae,Inga,alba,Compuesta,Alternas,Distica o Espiral,Si,No,Entero,Si,Si,Guisante,Raquis Alado,No
+Fabales,fabaceae,mimosoideae,Cedrelinga,cateaeformis,Recompuestas,Alternas,Distica o Espiral,Si,No,Entero,Si,Si,Guisante,,No
+Fabales,fabaceae,mimosoideae,Adenanthera,,Recompuestas,Alternas,Distica o Espiral,Si,No,Entero,No,Si,Guisante,,Si
+Fabales,fabaceae,mimosoideae,Mimosa,,Compuesta o Biyugada,Alternas,Distica o Espiral,Si,Si,Entero,No,Si,Guisante,,Si
+Fabales,fabaceae,mimosoideae,Pentacletha,,Compuesta,Alternas,Espigas,Si,No,Entero,No,Si,Guisante,,Si
+Fabales,fabaceae,mimosoideae,Samanea,,Compuesta,Alternas,Distica o Espiral,Si,No,Entero,Si,Si,Guisante,Glandulas en raquis,
+Fabales,fabaceae,caesalpinioideae,General,,Compuestas,Alternas,Distica o Espiral,Si,No,Entero,No,No,,"Si son imparipinadas, foliolos alternos",No
+Fabales,fabaceae,caesalpinioideae,Senna,aculeata,Compuesta,Alternas,Distica o Espiral,Si,No,Entero,No,No,,,No
+Fabales,fabaceae,caesalpinioideae,Bauhinia,guianensis,Simple Bilobulada,Alternas,Distica o Espiral,Si,No,Entero,No,No,,,Si
+Fabales,fabaceae,caesalpinioideae,Peltogyne,,Compuesta Bifoliada,Alternas,Distica o Espiral,Si,No,Entero,No,No,,,Si
+Fabales,fabaceae,caesalpinioideae,Macrolobium,,Compuesta Bifoliada,Alternas,Distica o Espiral,Si,No,Entero,No,No,,,Si
+Fabales,fabaceae,caesalpinioideae,Hymenaea,,Compuesta Bifoliada,Alternas,Distica o Espiral,Si,No,Entero,No,No,,Peciolos Alargados,Si
+Fabales,fabaceae,caesalpinioideae,Tachigali,paniculata,Compuesta,Alternas,Distica o Espiral,Si,No,Entero,No,No,,,No
+Fabales,fabaceae,caesalpinioideae,Cynometra,,Compuesta,Alternas,Distica o Espiral,Si,No,Entero,Si,No,,,No
+Fabales,fabaceae,papilionoideae,General,,Compuestas,Alternas,Distica o Espiral,Si,No,Entero,No,Sí,Guisante,"Tienden a ser trifoliadas o imparipinados, con folios opuestos",No
+Fabales,fabaceae,papilionoideae,Erythrina,,Compuesta Trifoliada,Alternas,Distica o Espiral,Si,No,Entero,No,Si,Guisante,,Si
+Fabales,fabaceae,papilionoideae,Centrolobium,,Compuesta,Alternas,Distica o Espiral,Si,No,Entero,No,Si,,Puntos blancos en envés,No
+Fabales,fabaceae,papilionoideae,Machaerium,,Compuesta,Alternas,Distica o Espiral,Si,Si,Entero,No,Si,Guisante,Exudado Rojo,Si
+Fabales,fabaceae,papilionoideae,Platypodium,,Compuesta ,Alterna,Distica o Espiral,Si,No,Entero,No,Si,Guisante,,No
+Myrtales,Combretaceae,,General,,Simples,Alternas u Opuestas,Espiralado agrupada,No,No,Entero,Si y No,No,,,No
+Myrtales,Combretaceae,,Terminalia,amazonica,Simples,Alternas u Opuestas,Espiralado Agrupada,No,No,Entero,Si,No,,,No
+Myrtales,Combretaceae,,Buchenavia,,Simples,Alternas ,Espiralado Agrupada,No,No,Entero,Si,No,,Pubesencia Rojiza,No
+Myrtales,Combretaceae,,Bucida,buceras,Simples,Alternas u Opuestas,Espiralado Agrupada,No,No,Entero,No,No,,Espinas,No
+Myrtales,Combretaceae,,Conocarpus,erectus,Simples,Alternas,Espiralado Agrupada,No,No,Entero,Si,No,,,No
+Myrtales,Combretaceae,,Languncularia,,Simples,Opuestas,Espiralado Agrupada,No,No,Entero,Si,No,,,No
+Myrtales,Combretaceae,,Combretum,assimile,Simples,Alternas u Opuestas,Espiralado Agrupada,No,No,Entero,No,No,,Suele ser vejuco,No
+Myrtales,Lythraceae,,General,,Simples,Opuestas o Verticiladas,Espiralada o Decusada,Si,No,Entero,Si y No,No,,"Similar a Myrtaceae, tallos tetragonales, estípula negra",No
+Myrtales,Lythraceae,,Lafoensia,,Simples,Opuestas o Verticiladas,Espiralada o Decusada,Si,No,Entero,No,No,,"Similar a Myrtaceae, tallos tetragonales, estípula negra",No
+Myrtales,Lythraceae,,Adenaria,,Simples,Opuestas o Verticiladas,Espiralada o Decusada,Si,No,Entero,Si,No,,"Similar a Myrtaceae, tallos tetragonales, estípula negra",No
+Myrtales,Lythraceae,,Lagerstroemia,,Simples,Opuestas o Verticiladas,Espiralada o Decusada,Si,No,Entero,No,No,,"Similar a Myrtaceae, tallos tetragonales, estípula negra",No
+Myrtales,Melastomataceae,,General,,Simples,Opuestas,Decusadas,No,No,Entero,No,No,,3 a 7 nervaduras,No
+Myrtales,Melastomataceae,,Bellucia,,Simples,Opuestas,Decusadas,No,No,Entero,No,No,,3 a 7 nervaduras,No
+Myrtales,Melastomataceae,,Blakea,bracteata,Simples,Opuestas,Decusadas,No,No,Entero,No,No,,3 a 7 nervaduras,No
+Myrtales,Melastomataceae,,Mouriri,myrtifolia,Simples,Opuestas,Decusadas,No,No,Entero,No,No,,No trinerviacion,Si
+Myrtales,Melastomataceae,,Mouriri,nigra,Simples,Opuestas,Decusadas,No,No,Entero,No,No,,No trinerviacion,Si
+Myrtales,Melastomataceae,,Miconia,,Simples,Opuestas,Decusadas,No,No,Entero,No,No,,3 a 7 nervaduras,No
+Myrtales,Melastomataceae,,Macairea,,Simples,Opuestas,Decusadas,No,No,Entero,No,No,,3 a 7 nervaduras,No
+Myrtales,Melastomataceae,,Tibouchina,,Simples,Opuestas,Decusadas,No,No,Entero,No,No,,3 a 7 nervaduras,No
+Myrtales,Myrtaceae,,General,,Simples,Alternas u Opuestas,Decusadas o Verticiladas,No,No,Entero,Si,Si,,Aromas esenciales,No
+Myrtales,Myrtaceae,,Myrcia,splendis,Simples,Alternas u Opuestas,Decusadas o Verticiladas,No,No,Entero,Si,Si,,Aromas esenciales,No
+Myrtales,Myrtaceae,,Psidium,guajava,Simples,Alternas u Opuestas,Decusadas o Verticiladas,No,No,Entero,Si,Si,Guayaba ,Aromas esenciales,No
+Myrtales,Myrtaceae,,Syzygium,,Simples,Alternas u Opuestas,Decusadas o Verticiladas,No,No,Entero,Si,Si,Cloaca,Aromas esenciales,No
+Myrtales,Myrtaceae,,Eugenia,,Simples,Alternas u Opuestas,Decusadas o Verticiladas,No,No,Entero,Si,Si,Cloaca,Aromas esenciales,No
+Myrtales,Myrtaceae,,Eucalyptus,,Simples,Alternas u Opuestas,Decusadas o Verticiladas,No,No,Entero,Si,Si,Eucalipto,Aromas esenciales,No
+Myrtales,Myrtaceae,,Calistemo,,Simples,Alternas u Opuestas,Decusadas o Verticiladas,No,No,Entero,Si,Si,Calistemo,Aromas esenciales,No
+Myrtales,vochysiaceae,,General,,Simples,Opuestas o Verticiladas,,Si y No,No,Entero,Si y No,No,,,No
+Myrtales,vochysiaceae,,Erisma,bicolor,Simples,Opuestas,DecusadaVerticiladas,Si,No,Entero,No,No,,Pelos Estrellados,No
+Myrtales,vochysiaceae,,Ruiztenaria,,Simples,Opuestas,DecusadaVerticiladas,Si,No,Entero,Si,No,,Glandula estipular,No
+Myrtales,vochysiaceae,,Qualea,Grandiflora,Simples,Opuestas,DecusadaVerticiladas,Si,No,Entero,Si,No,,"Nerviación Paralela, glandula estipular",No
+Myrtales,vochysiaceae,,Vochysia,acuminata,Simples,Verticiladas,DecusadaVerticiladas,Si,No,Entero,No,No,,,No
+Malpighiales,Achariaceae,,General,,Simples,Alternas,Espiraladas,Si,No,Entero o Aserrado,No,No,,Peciolo pulvinulado,No
+Malpighiales,Achariaceae,,Carpotroche,longifolia,Simples,Alternas,Espiraladas,Si,No,Entero o Aserrado,No,No,,Peciolo pulvinulado,No
+Malpighiales,Achariaceae,,Mayna,grandifolia,Simples,Alternas,Espiraladas,Si,No,Entero o Aserrado,No,No,,Peciolo pulvinulado,No
+Malpighiales,Achariaceae,,lindakeria,paludosa,Simples,Alternas,Espiraladas,Si,No,Entero o Aserrado,No,No,,Peciolo pulvinulado,No
+Malpighiales,Calophylaceae,,General,,Simples,Opuestas,Decusadas,No,Si,Entero ,No,No,,"Exudados amarilloverdosos o recinosos, ultimo par de hojas enfrentadas, puntos translucidos, nervaduras secundarias paralelas",No
+Malpighiales,Calophylaceae,,calophyllum,brasiliense,Simples,Opuestas,Decusadas,No,Si,Entero ,No,No,,"Exudados amarilloverdosos o recinosos, ultimo par de hojas enfrentadas, puntos translucidos, nervaduras secundarias paralelas",No
+Malpighiales,Calophylaceae,,caraipa,densifolia,Simples,Opuestas,Decusadas,No,Si,Entero ,No,No,,"Exudados amarilloverdosos o recinosos, ultimo par de hojas enfrentadas, puntos translucidos, nervaduras secundarias paralelas",No
+Malpighiales,Calophylaceae,,mahurea,,Simples,Opuestas,Decusadas,No,Si,Entero ,No,No,,"Exudados amarilloverdosos o recinosos, ultimo par de hojas enfrentadas, puntos translucidos, nervaduras secundarias paralelas",No
+Malpighiales,Calophylaceae,,mammea,,Simples,Opuestas,Decusadas,No,Si,Entero ,No,No,,"Exudados amarilloverdosos o recinosos, ultimo par de hojas enfrentadas, puntos translucidos, nervaduras secundarias paralelas",No
+Malpighiales,Calophylaceae,,marila,,Simples,Opuestas,Decusadas,No,Si,Entero ,No,No,,"Exudados amarilloverdosos o recinosos, ultimo par de hojas enfrentadas, puntos translucidos, nervaduras secundarias paralelas",No
+Malpighiales,Chrysobalanaceae,,General,,Simples,Alternas,Espiraladas,Si,Si y No,Entero,Si,No,,Estipulas caedisas,No
+Malpighiales,Chrysobalanaceae,,licania,affinis,Simples,Alternas,Espiraladas,Si,Si y No,Entero,Si,No,,Envés blanquesino,No
+Malpighiales,Chrysobalanaceae,,couepia,chrysocalyx,Simples,Alternas,Espiraladas,Si,Si y No,Entero,Si,No,,Envés blanquesino,No
+Malpighiales,Chrysobalanaceae,,parinari,excelsa,Simples,Alternas,Espiraladas,Si,Si y No,Entero,Si,No,,"Envés dorado, estípulas grandes",No
+Malpighiales,Clusiaceae,,General,,Simples,Opuestas,,No,Si,Entero,No,No,,"Latex amarilloverdoso. peciolos invaginados, ultimo par de hojas muy horizontal",No
+Malpighiales,Clusiaceae,,Clusia,peninsulae,Simples,Opuestas,,No,Si,Entero,No,No,,"Latex amarilloverdoso. peciolos invaginados, ultimo par de hojas muy horizontal",No
+Malpighiales,Clusiaceae,,Garcinia,madruno,Simples,Opuestas,,No,Si,Entero,No,No,,"Latex amarilloverdoso. peciolos invaginados, ultimo par de hojas muy horizontal",No
+Malpighiales,Clusiaceae,,Moronobea,,Simples,Opuestas,,No,Si,Entero,No,No,,"Latex amarilloverdoso. peciolos invaginados, ultimo par de hojas muy horizontal",No
+Malpighiales,Clusiaceae,,Platonia,globurifera,Simples,Opuestas,,No,Si,Entero,No,No,,"Latex amarilloverdoso. peciolos invaginados, ultimo par de hojas muy horizontal",No
+Malpighiales,Clusiaceae,,Symphonia,,Simples,Opuestas,,No,Si,Entero,No,No,,"Latex amarilloverdoso. peciolos invaginados, ultimo par de hojas muy horizontal",No
+Malpighiales,Euphorbiaceae,,General,,Simples o Compuestas,Alternas u Opuestas,,Si,Si,,Si y No,No,,"Peciolos de diferentes longitudes, puede tener glandulas o no, mayoría con estípulas",No
+Malpighiales,Euphorbiaceae,Acalyphoideae,General,,,,,Si,Si,,Si,No,,,No
+Malpighiales,Euphorbiaceae,Acalyphoideae,Alchornea,discolor,Simples,Alternas,,Si,No,,Si,No,,,No
+Malpighiales,Euphorbiaceae,Acalyphoideae,Conceveiba,martiniana,,,,Si,Si,,Si,No,,"Pelos Estrellados, glandulas en base de sépalos",No
+Malpighiales,Euphorbiaceae,Acalyphoideae,Caryodendron,orinocense,Simples,Alternas,,Si,Si,Entero,Si,No,,"Peciolo acanalado,exudado acuosoblanquesino que oxida a anaranjado",No
+Malpighiales,Euphorbiaceae,Cortonoideae,General,,,,,Si,Si,,Si,No,,,No
+Malpighiales,Euphorbiaceae,Cortonoideae,Croton,cuneatus,,Alternas,,Si,Si,Entero,Si,Si,Aromático,"Exudado Acuoso, pelos estrellados",No
+Malpighiales,Euphorbiaceae,Cortonoideae,Hevea,brasiliensis,Compuesta Trifoliadas,Alternas,,Si,Si,,Si,No,,,No
+Malpighiales,Euphorbiaceae,Euphorbioideae,General,,,,,Si,Si,,Si,No,,,No
+Malpighiales,Euphorbiaceae,Euphorbioideae,Mabea,,Simples,Alternas,,Si,Si,,Si,No,,,No
+Malpighiales,Euphorbiaceae,Euphorbioideae,Sapium,glandulosum,Simples,Alternas,,Si,Si,Aserrado,Si,No,,,No
+Malpighiales,Euphorbiaceae,Euphorbioideae,Senefeldera,,,,,Si,Si,,Si,No,,,No
+Malpighiales,Euphorbiaceae,Euphorbioideae,Hura,crepitans,Simples,Alternas,,Si,Si,Crenado,Si,No,,Tronco con aguijones,No
+Malpighiales,Euphorbiaceae,Euphorbioideae,Nealchornea,yuparensis,,,,Si,Si,,Si,No,,,No
+Malpighiales,Humiricaceae,,General,,Simples,Alternas,Espiralada o Distica,No,No,Crenado,No,,,Corteza interna rojiza,No
+Malpighiales,Humiricaceae,,Humiria,balsamifera,Simples,Alternas,Espiralada o Distica,No,No,Crenado,No,,,"Corteza interna rojiza, nerviación principal engrosa a base",No
+Malpighiales,Humiricaceae,,Humiriastrum,,Simples,Alternas,Espiralada o Distica,No,No,Crenado,No,,,"Corteza interna rojiza, paciolos pulvinulados, puntos negros",No
+Malpighiales,Humiricaceae,,Sacoglottis,,Simples,Alternas,Espiralada o Distica,No,No,Crenado,No,,,Corteza interna rojiza,No
+Malpighiales,Humiricaceae,,Vantanea,depleta,Simples,Alternas,Espiralada o Distica,No,No,Crenado,No,,,Corteza interna rojiza,No
+Malpighiales,Hypericaceae,,General,,Simples,Opuestas o Verticiladas,Decusadas,No,Si,Entero,No,,,Resinas de color amarillo,No
+Malpighiales,Hypericaceae,,Vismia,lauriformis,Simples,Opuestas o Verticiladas,Decusadas,No,Si,Entero,No,,,Puntos translucidos,No
+Malpighiales,Malpihiaceae,,General,,Simples,Opuestas,Decusadas,Si,No,,,,,,No
+Malpighiales,Caryocariaceae,,General,,Compuestas Trfoliadas,Alternas u Opuestas,,Si,No,Aserrado,Si y No,No,,Estipulas Triangulares,No
+Malpighiales,Caryocariaceae,,Caryocar,,Compuestas,Opuestas,Espiraladas,Si,No,Aserrado,Si,No,,Glandulas en base del paciolo,No
+Malpighiales,Caryocariaceae,,Anthodiscus,,Compuestas,Alternas,Espiraladas,Si,No,Aserrado,No,No,,,No
+Malpighiales,Ochnaceae,Ochnoidae,General,,Simples,Alternas,Espiraladas,Si,No,,No,,,,No
+Malpighiales,Ochnaceae,Ochnoidae,Ochna,serrulata,Simples,Alternas,Espiraladas,Si,No,,No,,,,No
+Malpighiales,Ochnaceae,Ochnoidae,Cespedesia,spanthulata,Simples,Alternas,Espiraladas,Si,No,,No,,,,No
+Malpighiales,Ochnaceae,Ochnoidae,Godoya,obovata,Simples,Alternas,Espiraladas,Si,No,,No,,,,No
+Malpighiales,Ochnaceae,Ochnoidae,Ouratea,lucens,Simples,Alternas,Espiraladas,Si,No,,No,,,,No
+Malpighiales,Ochnaceae,Medusgyne,General,,,,,,,,,,,,No
+Malpighiales,Ochnaceae,Quiinoideae,General,,Simples,Opuestas,Decusadas,Si,No,Aserrado,No,,,Nervios secundarios paralelos,No
+Malpighiales,Ochnaceae,Quiinoideae,Froesia,diffusa,Simples,Opuestas,Decusadas,Si,No,Aserrado,No,,,Nervios secundarios paralelos,No
+Malpighiales,Ochnaceae,Quiinoideae,Lacunaria,jemnanii,Simples,Opuestas,Decusadas,Si,No,Aserrado,No,,,Nervios secundarios paralelos,No
+Malpighiales,Ochnaceae,Quiinoideae,Quiina,amazonica,Simples,Opuestas,Decusadas,Si,No,Entero,No,,,Nervios secundarios paralelos,No
+Malpighiales,Ochnaceae,Quiinoideae,Toroulia,,Simples,Opuestas,Decusadas,Si,No,Aserrado,No,,,Nervios secundarios paralelos,No
+Malpighiales,Peraceae,,General,,Simples ,Alternas,Espiraladas,Si,No,Entero,No,,,Doble anastomosis,No
+Malpighiales,Peraceae,,Pera,benesis,Simples ,Alternas,Espiraladas,Si,No,Entero,No,,,Doble anastomosis,No
+Malpighiales,Peraceae,,Pogonophora,schomburgkiana,Simples ,Alternas,Espiraladas,Si,No,Entero,No,,,Doble anastomosis,No
+Malpighiales,Phyllanthaceae,,General,,Simples,Alternas,Disticas,Si,No,Entero,No,,,Estipulas pareadas,No
+Malpighiales,Phyllanthaceae,,Amanoa,,Simples,Alternas,Disticas,Si,No,Entero,No,,,Estipulas pareadas,No
+Malpighiales,Phyllanthaceae,,Hieronyma,alchorneoides,Simples,Alternas,Disticas,Si,No,Entero,No,,,Estipulas pareadas,No
+Malpighiales,Phyllanthaceae,,Jablonskia,,Simples,Alternas,Disticas,Si,No,Entero,No,,,Estipulas pareadas,No
+Malpighiales,Phyllanthaceae,,Margaritaria,nobilis,Simples,Alternas,Disticas,Si,No,Entero,No,,,Estipulas pareadas,No
+Malpighiales,Phyllanthaceae,,Phyllanthus,amarus,Simples,Alternas,Disticas,Si,No,Entero,No,,,Estipulas pareadas,No
+Malpighiales,Putranjivaceae,,General,,Simples,Alternas,,No,No,Crenado,No,,,"Base de hojas asimetrico, sabor similar a primienta",No
+Malpighiales,Putranjivaceae,,Drypetes,,Simples,Alternas,,No,No,Crenado,No,,,"Base de hojas asimetrico, sabor similar a primienta",No
+Malpighiales,Rhizophoraceae,,General,,Simples,Opuestas,,Si,No,Entero o Aserrado,No,,,Estipula cónica terminal,No
+Malpighiales,Rhizophoraceae,,Cassipourea,elliptica,Simples,Opuestas,,Si,No,Entero o Aserrado,No,,,Estipula cónica terminal,No
+Malpighiales,Rhizophoraceae,,Rhizophora,mangle,Simples,Opuestas,,Si,No,Entero o Aserrado,No,,,Estipula cónica terminal,No
+Malpighiales,Salicaceae,,General,,Simples,Alternas,Distica o Espiralada,Si,No,Aserrado,Si,Si,Medecina,"Glandulas en borde, lineolas translucidas",No
+Malpighiales,Salicaceae,,Banara,guianensis,Simples,Alternas,Distica o Espiralada,Si,No,Aserrado,Si,Si,Medecina,"Glandulas en borde, lineolas translucidas",No
+Malpighiales,Salicaceae,,Caesearia,aculeata,Simples,Alternas,Distica o Espiralada,Si,No,Aserrado,Si,Si,Medecina,"Glandulas en borde, lineolas translucidas",No
+Malpighiales,Salicaceae,,Hasseltia,,Simples,Alternas,Distica o Espiralada,Si,No,Aserrado,Si,Si,Medecina,"Glandulas en borde, lineolas translucidas",No
+Malpighiales,Salicaceae,,Laetia,,Simples,Alternas,Distica o Espiralada,Si,No,Aserrado,Si,Si,Medecina,"Glandulas en borde, lineolas translucidas",No
+Malpighiales,Salicaceae,,Neoptychocarpus,,Simples,Alternas,Distica o Espiralada,Si,No,Aserrado,Si,Si,Medecina,"Glandulas en borde, lineolas translucidas",No
+Malpighiales,Salicaceae,,Ryania,speciosa,Simples,Alternas,Distica o Espiralada,Si,No,Aserrado,Si,Si,Medecina,"Glandulas en borde, lineolas translucidas",No
+Malpighiales,Salicaceae,,Tetrathylacium,macrophylum,Simples,Alternas,Distica o Espiralada,Si,No,Aserrado,Si,Si,Medecina,"Glandulas en borde, lineolas translucidas",No
+Malpighiales,Violaceae,,General,,Simples,Alternas,Distica o Espiralada,Si y No,No,Entero o Aserrado,,,,Hojas en rosetas,No
+Malpighiales,Violaceae,,Amphirrhox,,Simples,Alternas,Distica o Espiralada,Si y No,No,Entero o Aserrado,,,,Hojas en rosetas,No
+Malpighiales,Violaceae,,Gloeospermum,sphaerocarpum,Simples,Alternas,Distica o Espiralada,Si y No,No,Entero o Aserrado,,,,Hojas en rosetas,No
+Malpighiales,Violaceae,,Leonia,cymosa,Simples,Alternas,Distica o Espiralada,Si y No,No,Entero o Aserrado,,,,Hojas en rosetas,No
+Malpighiales,Violaceae,,Rinorea,lindeniana,Simples,Alternas,Distica o Espiralada,Si y No,No,Entero o Aserrado,,,,Hojas en rosetas,No
+Gentianales,Apocynaceae,,General,,Simples,Opuestas,Decusadas,No,Si,Entero,,,,Abundante exudado,No
+Gentianales,Apocynaceae,,Aspidosperma,parvifolium,Simples,Opuestas,Decusadas,No,Si,Entero,,,,Abundante exudado,No
+Gentianales,Apocynaceae,,Couma,macrocarpa,Simples,Opuestas,Decusadas,No,Si,Entero,,,,Abundante exudado,No
+Gentianales,Apocynaceae,,Himatanthus,succuba,Simples,Opuestas,Decusadas,No,Si,Entero,,,,Abundante exudado,No
+Gentianales,Apocynaceae,,Macaoubea,,Simples,Opuestas,Decusadas,No,Si,Entero,,,,Abundante exudado,No
+Gentianales,Apocynaceae,,Tabernaemontana,litoralis,Simples,Opuestas,Decusadas,No,Si,Entero,,,,Abundante exudado,No
+Gentianales,Rubiaceae,,General,,Simples,Opuestas,Decusadas,Si,No,Entero,,,,,No
+Gentianales,Rubiaceae,Ixoroideae,Borojoa,stipularis,Simples,Opuestas,Decusadas,Si,No,Entero,,,,,No
+Gentianales,Rubiaceae,Ixoroideae,Calycophyllum,megistocaullum,Simples,Opuestas,Decusadas,Si,No,Entero,,,,,No
+Gentianales,Rubiaceae,Ixoroideae,Capirona,decorticans,Simples,Opuestas,Decusadas,Si,No,Entero,,,,,No
+Gentianales,Rubiaceae,Ixoroideae,Duroia,hirsuta,Simples,Opuestas,Decusadas,Si,No,Entero,,,,,No
+Gentianales,Rubiaceae,Ixoroideae,Genipa,americana,Simples,Opuestas,Decusadas,Si,No,Entero,,,,,No
+Laurales,Hernandiaceae,,General,,Simples o Digitadas,Alternas,,No,No,Entero o Lobulado,,Si,Aromático,Peciolos alargados,No
+Laurales,Hernandiaceae,,Gyrocarpus,americanus,Trilobulada o Entera,Alternas,,No,No,Entero o Lobulado,,Si,Aromático,Trinervada,No
+Laurales,Hernandiaceae,,Hernandia,,Simples,Alternas,,No,No,Entero,,Si,Aromático,"Subpeltada, peciolos de longitud variada",No
+Laurales,Lauraceae,,General,,Simples,Alternas u Opuestas,Espiraladas y Agrupadas,No,No,Entero o Lobulado,,Si,Aromático,"Nervadura del envés blanquesina o amarillas, agrupadas, frutos importantes para fauna",No
+Laurales,Lauraceae,,Persea,americana,Simples,Alternas u Opuestas,Espiraladas y Agrupadas,No,No,Entero o Lobulado,,Si,Aromático,"Nervadura del envés blanquesina o amarillas, agrupadas, frutos importantes para fauna",No
+Laurales,Lauraceae,,Cinnamomum,verum,Simples,Alternas u Opuestas,Espiraladas y Agrupadas,No,No,Entero o Lobulado,,Si,Aromático,"Nervadura del envés blanquesina o amarillas, agrupadas, frutos importantes para fauna",No
+Laurales,Lauraceae,,Cinnamomum,camphora,Simples,Alternas u Opuestas,Espiraladas y Agrupadas,No,No,Entero o Lobulado,,Si,Aromático,"Nervadura del envés blanquesina o amarillas, agrupadas, frutos importantes para fauna",No
+Laurales,Siparunaceae,,General,,Simples,Opuestas,Decusadas,No,No,Entero o Aserrado,,Si,Cítrico,"Pubesencia estrellada, puntos translucidos, hojas carnosas",No
+Laurales,Siparunaceae,,Siparuna,,Simples,Opuestas,Decusadas,No,No,Entero o Aserrado,,Si,Cítrico,"Pubesencia estrellada, puntos translucidos, hojas carnosas",No
+Laurales,Monimaceae,,General,,Simples,Opuestas,,No,No,Entero,,,,"Pubesencia estrellada, nodos hinchados",No
+Laurales,Monimaceae,,Mollinedia,,Simples,Opuestas,,No,No,Entero,,,,"Pubesencia estrellada, nodos hinchados",No
+Magnoliales,Annoniaceae,,General,,Simples,Alternas,Disticas,No,No,Entero,,Si,Aromático,"Guasca, pubesencia",No
+Magnoliales,Annoniaceae,,Annona,,Simples,Alternas,Disticas,No,No,Entero,,Si,Aromático,"Guasca, pubesencia",No
+Magnoliales,Annoniaceae,,Duguetia,,Simples,Alternas,Disticas,No,No,Entero,,Si,Aromático,"Guasca, pubesencia",No
+Magnoliales,Annoniaceae,,Rollinia,,Simples,Alternas,Disticas,No,No,Entero,,Si,Aromático,"Guasca, pubesencia",No
+Magnoliales,Magnoliaceae,,General,,Simples,Alternas,Espiraladas,Si,No,Entero,,Si,Aromático,cicatriz agnata (anillo en tallos),No
+Magnoliales,Magnoliaceae,,Magnolia,rima,Simples,Alternas,Espiraladas,Si,No,Entero,,Si,Aromático,cicatriz agnata (anillo en tallos),No
+Magnoliales,Myristicaceae,,General,,Simples,Alternas,,,,Entero,,Si,Aromático,"Exudado oxida a rojizo, sabor astringente, pelos simples o estrellados",No
+Magnoliales,Myristicaceae,,Virola,,Simples,Alternas,,,,Entero,,Si,Aromático,"Cordadas, envés blanquesino",No
+Magnoliales,Myristicaceae,,Iryanthera,,Simples,Alternas,,,,Entero,,Si,Aromático,Peciolos rojos,No
+Magnoliales,Myristicaceae,,Compsoneura,,Simples,Alternas,,,,Entero,,Si,Aromático,pratón de nerviación terciaria,No
