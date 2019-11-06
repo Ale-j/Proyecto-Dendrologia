@@ -1,5 +1,6 @@
 
 library(shiny)
+library(tidyverse)
 
 datos<- read.csv("dendro_parcial1.csv", encoding = "UTF-8")
 
