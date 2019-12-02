@@ -21,3 +21,39 @@ server<- function(input, output) {
 }
 
 shinyApp(ui = ui, server= server)
+
+
+data<- read.csv("MarkerData.csv")
+
+data<- data %>% select(Notes, Latitude, Longitude) %>% 
+  filter(Notes != "null")
+
+
+library(leaflet)
+library(sf)
+
+
+ui<- fluidPage(
+  selectInput(inputId = "Notes", 
+              label = strong("Seleccione una familia:"), 
+              choices = unique(data$Notes),
+              selected = "zamia"),
+  leafletOutput(outputId = "coor"))
+
+server<- function(input, output) {
+  
+  sel<- reactive(data %>% filter(Notes == input$Notes))
+  output$coor<- renderLeaflet({
+    leaflet() %>% 
+      addTiles() %>% 
+      addMarkers(data = sel())
+  })}
+
+shinyApp(ui = ui, server= server)
+
+
+m <- leaflet() %>%
+  addTiles() %>% 
+  addMarkers(lng= data$Longitude[1], 
+             lat= data$Latitude[1], popup= "Podocarpaceae")
+m
